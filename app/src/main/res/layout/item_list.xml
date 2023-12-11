@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/slider_background"
+    android:elevation="5dp"
+    android:padding="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/author_image"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_flag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/gotham_book"
+        android:text="Nagihan Uslu"
+        android:textColor="@color/default_black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/author_image"
+        app:layout_constraintTop_toTopOf="@+id/author_image" />
+
+    <TextView
+        android:id="@+id/author_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gotham_book"
+        android:text="Dun, 18:30'da gonderdi"
+        android:textColor="@color/default_black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/author_image"
+        app:layout_constraintStart_toStartOf="@+id/author_name"
+        app:layout_constraintTop_toBottomOf="@+id/author_name" />
+
+
+    <ImageView
+        android:id="@+id/list_badge_icon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:src="@drawable/m4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/author_image" />
+
+    <TextView
+        android:id="@+id/list_badge_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/gotham_book"
+        android:text="Takim Oyuncusu"
+        android:textColor="@color/default_black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@+id/list_badge_icon"
+        app:layout_constraintTop_toTopOf="@+id/list_badge_icon" />
+
+    <RatingBar
+        android:id="@+id/author_rating"
+        style="@android:style/Widget.Holo.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/star_blur"
+        android:progressTint="@color/star_bright"
+        android:stepSize="0.5"
+        app:layout_constraintStart_toEndOf="@+id/list_badge_icon"
+        app:layout_constraintStart_toStartOf="@id/list_badge_title"
+        app:layout_constraintTop_toBottomOf="@id/list_badge_title" />
+
+
+    <TextView
+        android:id="@+id/list_overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gotham_book"
+        android:padding="10dp"
+        android:text="gercek bir takim arkadasisin Birlikte calismanin cok zevkliydi ayni zamanda farkli acilardan bakmama yardimci oldun tesekkur ederim.gercek bir takim arkadasisin Birlikte calismanin cok zevkliydi ayni zamanda farkli acilardan bakmama yardimci oldun tesekkur ederim.gercek bir takim arkadasisin Birlikte calismanin cok zevkliydi ayni zamanda farkli acilardan bakmama yardimci oldun tesekkur ederim."
+        android:textColor="@color/default_black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_badge_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

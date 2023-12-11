@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/home_slider_imageView"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                tools:src="@drawable/icon_flag" />
+
+            <TextView
+                android:id="@+id/home_slider_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/home_slider_imageView"
+                app:layout_constraintTop_toTopOf="@+id/home_slider_imageView"
+                tools:text="Yaratici" />
+
+            <RatingBar
+                android:id="@+id/home_ListV_rating"
+                style="@android:style/Widget.Holo.RatingBar.Small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="25dp"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/star_blur"
+                android:progressTint="@color/star_bright"
+                android:stepSize="0.5"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@id/home_slider_title"
+                app:layout_constraintTop_toBottomOf="@id/home_slider_title" />
+
+            <TextView
+                android:id="@+id/home_slider_total_badge_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/home_ListV_rating"
+                app:layout_constraintTop_toBottomOf="@id/home_ListV_rating"
+                tools:text="32 Adet" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/home_slider_imageView2"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                tools:src="@drawable/m3" />
+
+            <TextView
+                android:id="@+id/home_slider_title2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="20dp"
+                android:paddingEnd="10dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/home_slider_imageView2"
+                app:layout_constraintTop_toTopOf="@+id/home_slider_imageView2"
+                tools:text="Deger Katan" />
+
+            <RatingBar
+                android:id="@+id/home_ListV_rating2"
+                style="@android:style/Widget.Holo.RatingBar.Small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="25dp"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/star_blur"
+                android:progressTint="@color/star_bright"
+                android:stepSize="0.5"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/home_slider_imageView2"
+                app:layout_constraintStart_toStartOf="@id/home_slider_title2"
+                app:layout_constraintTop_toBottomOf="@id/home_slider_title2" />
+
+            <TextView
+                android:id="@+id/home_slider_total_badge_txt2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/home_ListV_rating2"
+                app:layout_constraintTop_toBottomOf="@id/home_ListV_rating2"
+                tools:text="32 Adet" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
